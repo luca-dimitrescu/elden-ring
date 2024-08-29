@@ -2,10 +2,25 @@ document.body.style.background = "rgb(27,26,20)"
 document.getElementById("class-selecting").style.background = "linear-gradient(background: linear-gradient(251deg, rgba(27,26,20,1) 8%, rgba(66,62,42,1) 93%);)"
 
 function SelectingClass() {
-    document.getElementById("class-selecting").style.display = "block"
-    document.getElementById("classes").style.display = "flex"
     document.getElementById("intro").style.display = "none"
+    ClassSelecting();
+    function ClassSelecting() {
+        let class_selecting = document.getElementById("class-selecting");
+        let classes = document.getElementById("classes");
+
+        class_selecting.style.opacity = "0";
+        classes.style.opacity = "0";
+
+        class_selecting.style.display = "block"
+        classes.style.display = "flex"
+
+        classes.classList.add("fadeIn");
+        class_selecting.classList.add("fadeIn");
+
+    }
 }
+
+
 
 
 let imgsClass = [];

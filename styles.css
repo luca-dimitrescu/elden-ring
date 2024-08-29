@@ -314,3 +314,25 @@ body {
     color: #FFFFFF;
     margin-top: -32px;
 }
+
+
+@keyframes fadeDiv {
+
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeDiv 4s forwards;
+    opacity: 1;
+
+}

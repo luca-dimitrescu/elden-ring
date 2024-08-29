@@ -1,0 +1,316 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+@font-face {
+    font-family: "Garamond Premier Pro";
+    src: url('Cormorant-VariableFont_wght.ttf');
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    position: relative;
+}
+
+
+
+#fogbelow {
+    position: absolute;
+    bottom: -680px;
+    opacity: 0.4;
+    filter: blur(8px);
+    animation: fogBelowAnimate 30s linear infinite;
+    width: 2220px;
+    height: 1080px;
+    background-image: url('fogbelow.png');
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+
+@keyframes fogBelowAnimate {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes moveFog {
+    0% {
+        transform: translate3(0, 0);
+    }
+
+    50% {
+        transform: translate(-20%, 60%);
+    }
+
+    100% {
+        transform: translate(20%, -60%);
+    }
+}
+
+.copy {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    color: white;
+    font-size: 0.8em;
+    justify-content: right;
+    align-items: last baseline;
+    gap: 540px;
+    font-family: "Garamond Premier Pro";
+}
+
+.copyright,
+.version {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.version {
+    text-align: right;
+    padding-right: 15px;
+    font-size: 1.2em;
+    line-height: 1.59;
+}
+
+
+.logo_elden {
+    width: 992px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.continue,
+.new,
+.load,
+.system {
+    color: #FFFFFF;
+    z-index: 1;
+    font-family: "Garamond Premier Pro", sans-serif;
+    font-size: 1.3em;
+    position: absolute;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.continue {
+    top: 70.6%;
+
+}
+
+.load {
+    top: 75.2%;
+}
+
+.new {
+    top: 79.9%;
+}
+
+.system {
+    top: 84.39%;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.continue:hover~.continue-img,
+.continue-img:hover {
+    animation: fadeInOut 2s infinite ease-in-out;
+    cursor: pointer;
+    visibility: visible;
+}
+
+.new:hover~.new-img,
+.new-img:hover {
+    animation: fadeInOut 2s infinite ease-in-out;
+    cursor: pointer;
+    visibility: visible;
+}
+
+.load:hover~.load-img,
+.load-img:hover {
+    animation: fadeInOut 2s infinite ease-in-out;
+    cursor: pointer;
+    visibility: visible;
+}
+
+.system:hover~.system-img,
+.system-img:hover {
+    animation: fadeInOut 2s infinite ease-in-out;
+    cursor: pointer;
+    visibility: visible;
+}
+
+.menu_button {
+    width: 499px;
+    filter: blur(3px);
+    border-radius: 15px;
+    visibility: hidden;
+}
+
+.new-img {
+    visibility: visible;
+}
+
+.classes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    justify-content: center;
+    align-self: center;
+    max-width: 1600px;
+    margin-top: 60px;
+    height: 75vh;
+}
+
+
+.classes>.class-img {
+    max-width: 500px;
+    margin: 10px;
+    cursor: pointer;
+    display: none;
+    border: rgb(65, 63, 51) solid 2px;
+    background-color: rgb(26, 23, 18);
+}
+
+#class-selecting,
+.classes {
+    display: none;
+}
+
+.signDown {
+    max-width: 40px;
+    cursor: pointer;
+    padding-top: 20px;
+    animation: UpnDown 2s infinite ease-in-out;
+}
+
+@keyframes UpnDown {
+
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+#prev,
+#next {
+    position: absolute;
+    width: 40px;
+    cursor: pointer;
+}
+
+.selected_class-left {
+    width: 505px;
+    height: 655px;
+    position: absolute;
+    top: 162px;
+    left: 165px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.selected_class-middle {
+    width: 500px;
+    height: 645px;
+    position: absolute;
+    top: 162px;
+    left: 695px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.selected_class-right {
+    width: 500px;
+    height: 645px;
+    position: absolute;
+    cursor: pointer;
+    top: 162px;
+    left: 1215px;
+    z-index: 2;
+
+}
+
+#stroke-class {
+    width: 1950px;
+    height: 10px;
+    position: absolute;
+    top: 140px;
+    left: 0px;
+}
+
+#character_base {
+    width: 600px;
+    margin-top: 30px;
+}
+
+#prev {
+    top: 490px;
+    left: 80px;
+}
+
+#next {
+    top: 490px;
+    right: 80px;
+}
+
+.class-desc {
+    font-size: "Garamond Premier Pro";
+    color: #FFFFFF;
+    margin-left: 164px;
+    margin-top: -18px;
+}
+
+#left-mouse-class {
+    margin-left: 152px;
+    width: 40px;
+}
+
+.class-descrip {
+    margin-left: 194px;
+    color: #FFFFFF;
+    margin-top: -32px;
+}

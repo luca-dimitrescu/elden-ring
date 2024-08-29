@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELDEN RING</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="intro" id="intro">
+        <img src="fogbelow.png" alt="" id="fogbelow">
+        <div id="fogbelow"> </div>
+        <img src="logo_elden.png" class="logo_elden">
+
+        <h1 class="continue">CONTINUE</h1>
+        <img src="button.jpg" class="menu_button continue-img">
+
+        <h1 class="load">LOAD GAME</h1>
+        <img src="button.jpg" class="menu_button load-img">
+
+        <h1 class="new" onclick="SelectingClass()">NEW GAME</h1>
+        <img src="button.jpg" class="menu_button new-img">
+
+        <h1 class="system">SYSTEM</h1>
+        <img src="button.jpg" class="menu_button system-img">
+        <img src="sign-down.png" class="signDown">
+        <footer class="copy">
+            <p class="copyright"> ELDEN RING&trade; &amp; &copy;2022 BANDAI NAMCO Entertainment Inc. / &copy;2022
+                FromSoftware, Inc. </p>
+            <p class="version">ONLINE<br>App Ver. 1.02.2<br>Calibrations Ver 1.02.1</p>
+        </footer>
+    </div>
+    <div id="class-selecting">
+        <img src="select-character-base.png" alt="" id="character_base">
+        <img src="sign-class-prev.png" alt="" id="prev">
+        <img src="stroke-class.png" id="stroke-class" alt="">
+
+        <div class="classes" id="classes">
+            <img src="vagabond.png" alt="" class="vagabond-img class-img" id="vagabond-img"
+                onclick="SelectingClassVagabond()">
+            <img src="warrior.png" alt="" class="warrior-img class-img" id="warrior-img"
+                onclick="SelectingClassWarrior()">
+            <img src="hero.png" alt="" class="hero-img class-img" id="hero-img" onclick="SelectingClassHero()">
+            <img src="bandit.png" alt="" class="bandit-img class-img" id="bandit-img" onclick="SelectingClassBandit()">
+            <img src="astrologer.png" alt="" class="astrologer-img class-img" id="astrologer-img"
+                onclick="SelectingClassAstrologer()">
+            <img src="prophet.png" alt="" class="prophet-img class-img" id="prophet-img"
+                onclick="SelectingClassProphet()">
+            <img src="samurai.png" alt="" class="samurai-img class-img" id="samurai-img"
+                onclick="SelectingClassSamurai()">
+            <img src="prisoner.png" alt="" class="prisoner-img class-img" id="prisoner-img"
+                onclick="SelectingClassPrisoner()">
+            <img src="confessor.png" alt="" class="confessor-img class-img" id="confessor-img"
+                onclick="SelectingClassConfessor()">
+            <img src="wretch.png" alt="" class="wretch-img class-img" id="wretch-img" onclick="SelectingClassWretch()">
+        </div>
+
+
+        <img src="selected-class.png" alt="" class="selected_class-left" id="class-left">
+        <img src="selected-class.png" alt="" class="selected_class-middle" id="class-middle">
+        <img src="selected-class.png" alt="" class="selected_class-right" id="class-right">
+
+
+        <img src="sign-class-next.png" alt="" id="next">
+        <p class="class-desc">Select a base for creating your character</p>
+        <img src="left-mouse.png" alt="" id="left-mouse-class">
+        <p class="class-descrip">:Select</p>
+    </div>
+
+    </div>
+    <div class="container2"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
